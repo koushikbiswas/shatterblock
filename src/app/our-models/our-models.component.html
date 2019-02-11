@@ -1,0 +1,279 @@
+<!--<script type="text/javascript">
+    var $animation_elements = $('.animation-element');
+    var $window = $(window);
+
+    function check_if_in_view() {
+        var window_height = $window.height();
+        var window_top_position = $window.scrollTop();
+        var window_bottom_position = (window_top_position + window_height);
+
+        $.each($animation_elements, function() {
+            var $element = $(this);
+            var element_height = $element.outerHeight();
+            var element_top_position = $element.offset().top;
+            var element_bottom_position = (element_top_position + element_height);
+
+            //check to see if this current container is within viewport
+            if ((element_bottom_position >= window_top_position) &&
+                (element_top_position <= window_bottom_position)) {
+                $element.addClass('in-view');
+            } else {
+                $element.removeClass('in-view');
+            }
+        });
+    }
+
+    $window.on('scroll resize', check_if_in_view);
+    $window.trigger('scroll');
+</script>-->
+
+
+<div class="blankmenuiconblock innerhead1">
+  <app-header></app-header>
+  <div class="container-fluid innerhead1_header">
+    <div class="innerhead1_header_wrapper">
+      <div class="innerhead1toplogowrapper">
+        <img src="../assets/images/shatterproofmodelslogo.png" alt="Shatter Proof Models Logo">
+      </div>
+    </div>
+  </div>
+</div>
+<app-sidemenu></app-sidemenu>
+
+<div class="ourmodelsbannerblock">
+  <div class="ourmodelsbannertext">
+    <h1 class="headertitle">Meet The<br> Models-Talent</h1>
+  </div>
+</div>
+
+
+<div class="ourmodelsblock1">
+  <div class="ourmodelsblock1outside">
+      <div class="ourmodelsblock1wrapper">
+
+        <div class="ourmodelssingleblock">
+            <div class="ourmodelssingleimgblock">
+              <div class="ourmodelssingleblockimg1">
+                <img src="../assets/images/ourmodelssingleblockimg1.jpg" alt="ourmodels image 1">
+              </div>
+              <div class="ourmodelssingleblockimg1">
+                <img src="../assets/images/ourmodelssingleblockimg2.jpg" alt="ourmodels image 2">
+              </div>
+            </div>
+            <div class="ourmodelssingleblockoverlay">
+              <div class="ourmodelssingleblockcontent">
+                <h1 class="title-div">JEAN COPUS</h1>
+                <div class="measure-div">
+                  <p>
+                    Height: 5'5 |<br>
+                    Weight: 115lb | Bust: 34D<br>
+                    Waist: 24 | Hips: 36
+                  </p>
+                </div>
+                <a class="btnyellow" [routerLink]="'/model-profile/'">See More</a>
+              </div>
+            </div>
+          </div>
+
+        <div class="ourmodelssingleblock">
+          <div class="ourmodelssingleimgblock">
+            <div class="ourmodelssingleblockimg1">
+              <img src="../assets/images/ourmodelssingleblockimg3.jpg" alt="ourmodels image 1">
+            </div>
+            <div class="ourmodelssingleblockimg1">
+              <img src="../assets/images/ourmodelssingleblockimg4.jpg" alt="ourmodels image 2">
+            </div>
+          </div>
+          <div class="ourmodelssingleblockoverlay">
+            <div class="ourmodelssingleblockcontent">
+              <h1 class="title-div">JEAN COPUS</h1>
+              <div class="measure-div">
+                <p>
+                  Height: 5'5 |<br>
+                  Weight: 115lb | Bust: 34D<br>
+                  Waist: 24 | Hips: 36
+                </p>
+              </div>
+              <a class="btnyellow" [routerLink]="['/model-profile/']">See More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="ourmodelssingleblock">
+          <div class="ourmodelssingleimgblock">
+            <div class="ourmodelssingleblockimg1">
+              <img src="../assets/images/ourmodelssingleblockimg5.jpg" alt="ourmodels image 5">
+            </div>
+            <div class="ourmodelssingleblockimg1">
+              <img src="../assets/images/ourmodelssingleblockimg6.jpg" alt="ourmodels image 6">
+            </div>
+          </div>
+          <div class="ourmodelssingleblockoverlay">
+            <div class="ourmodelssingleblockcontent">
+              <h1 class="title-div">JEAN COPUS</h1>
+              <div class="measure-div">
+                <p>
+                  Height: 5'5 |<br>
+                  Weight: 115lb | Bust: 34D<br>
+                  Waist: 24 | Hips: 36
+                </p>
+              </div>
+              <a class="btnyellow" [routerLink]="['/model-profile/']">See More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="ourmodelssingleblock">
+          <div class="ourmodelssingleimgblock">
+            <div class="ourmodelssingleblockimg1">
+              <img src="../assets/images/ourmodelssingleblockimg7.jpg" alt="ourmodels image 7">
+            </div>
+            <div class="ourmodelssingleblockimg1">
+              <img src="../assets/images/ourmodelssingleblockimg8.jpg" alt="ourmodels image 8">
+            </div>
+          </div>
+          <div class="ourmodelssingleblockoverlay">
+            <div class="ourmodelssingleblockcontent">
+              <h1 class="title-div">JEAN COPUS</h1>
+              <div class="measure-div">
+                <p>
+                  Height: 5'5 |<br>
+                  Weight: 115lb | Bust: 34D<br>
+                  Waist: 24 | Hips: 36
+                </p>
+              </div>
+              <a class="btnyellow" [routerLink]="['/model-profile/']">See More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="ourmodelssingleblock">
+          <div class="ourmodelssingleimgblock">
+            <div class="ourmodelssingleblockimg1">
+              <img src="../assets/images/ourmodelssingleblockimg9.jpg" alt="ourmodels image 9">
+            </div>
+            <div class="ourmodelssingleblockimg1">
+              <img src="../assets/images/ourmodelssingleblockimg10.jpg" alt="ourmodels image 10">
+            </div>
+          </div>
+          <div class="ourmodelssingleblockoverlay">
+            <div class="ourmodelssingleblockcontent">
+              <h1 class="title-div">JEAN COPUS</h1>
+              <div class="measure-div">
+                <p>
+                  Height: 5'5 |<br>
+                  Weight: 115lb | Bust: 34D<br>
+                  Waist: 24 | Hips: 36
+                </p>
+              </div>
+              <a class="btnyellow" [routerLink]="['/model-profile/']">See More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="ourmodelssingleblock">
+          <div class="ourmodelssingleimgblock">
+            <div class="ourmodelssingleblockimg1">
+              <img src="../assets/images/ourmodelssingleblockimg11.jpg" alt="ourmodels image 11">
+            </div>
+            <div class="ourmodelssingleblockimg1">
+              <img src="../assets/images/ourmodelssingleblockimg12.jpg" alt="ourmodels image 12">
+            </div>
+          </div>
+          <div class="ourmodelssingleblockoverlay">
+            <div class="ourmodelssingleblockcontent">
+              <h1 class="title-div">JEAN COPUS</h1>
+              <div class="measure-div">
+                <p>
+                  Height: 5'5 |<br>
+                  Weight: 115lb | Bust: 34D<br>
+                  Waist: 24 | Hips: 36
+                </p>
+              </div>
+              <a class="btnyellow" [routerLink]="['/model-profile/']">See More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="ourmodelssingleblock">
+          <div class="ourmodelssingleimgblock">
+            <div class="ourmodelssingleblockimg1">
+              <img src="../assets/images/ourmodelssingleblockimg13.jpg" alt="ourmodels image 13">
+            </div>
+            <div class="ourmodelssingleblockimg1">
+              <img src="../assets/images/ourmodelssingleblockimg14.jpg" alt="ourmodels image 14">
+            </div>
+          </div>
+          <div class="ourmodelssingleblockoverlay">
+            <div class="ourmodelssingleblockcontent">
+              <h1 class="title-div">JEAN COPUS</h1>
+              <div class="measure-div">
+                <p>
+                  Height: 5'5 |<br>
+                  Weight: 115lb | Bust: 34D<br>
+                  Waist: 24 | Hips: 36
+                </p>
+              </div>
+              <a class="btnyellow" [routerLink]="['/model-profile/']">See More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="ourmodelssingleblock">
+          <div class="ourmodelssingleimgblock">
+            <div class="ourmodelssingleblockimg1">
+              <img src="../assets/images/ourmodelssingleblockimg15.jpg" alt="ourmodels image 15">
+            </div>
+            <div class="ourmodelssingleblockimg1">
+              <img src="../assets/images/ourmodelssingleblockimg16.jpg" alt="ourmodels image 16">
+            </div>
+          </div>
+          <div class="ourmodelssingleblockoverlay">
+            <div class="ourmodelssingleblockcontent">
+              <h1 class="title-div">JEAN COPUS</h1>
+              <div class="measure-div">
+                <p>
+                  Height: 5'5 |<br>
+                  Weight: 115lb | Bust: 34D<br>
+                  Waist: 24 | Hips: 36
+                </p>
+              </div>
+              <a class="btnyellow" [routerLink]="['/model-profile/']">See More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="ourmodelssingleblock">
+          <div class="ourmodelssingleimgblock">
+            <div class="ourmodelssingleblockimg1">
+              <img src="../assets/images/ourmodelssingleblockimg17.jpg" alt="ourmodels image 17">
+            </div>
+            <div class="ourmodelssingleblockimg1">
+              <img src="../assets/images/ourmodelssingleblockimg18.jpg" alt="ourmodels image 18">
+            </div>
+          </div>
+          <div class="ourmodelssingleblockoverlay">
+            <div class="ourmodelssingleblockcontent">
+              <h1 class="title-div">JEAN COPUS</h1>
+              <div class="measure-div">
+                <p>
+                  Height: 5'5 |<br>
+                  Weight: 115lb | Bust: 34D<br>
+                  Waist: 24 | Hips: 36
+                </p>
+              </div>
+              <a class="btnyellow" [routerLink]="['/model-profile/']">See More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="jointheteam text-center">
+          <a class="btngreen">Join The Team</a>
+        </div>
+      </div>
+  </div>
+</div>
+
+<app-footer></app-footer>
+
+
