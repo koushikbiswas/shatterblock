@@ -3508,7 +3508,7 @@
         width: 96%;
         margin: 50px auto;
     }
-    .newhome_contactusdiv .formdivwrapper .formpaddingright{padding-right: 0px !important;}
+
 
     .new_shatter_vips_bg5 {
         bottom: -51%;
@@ -4716,6 +4716,8 @@
 }
 
 @media screen and (max-width: 600px){
+
+
     .ourmodelssingleblockimg1 {
         height: 192px;
     }
@@ -4875,6 +4877,10 @@
 }
 
 @media screen and (max-width: 480px) {
+    .newhome_contactusdiv .formdivwrapper form .col-xs-6 {width: 100%;}
+    .newhome_contactusdiv .formdivwrapper form .col-xs-6.formpaddingright {
+        padding-right: 0px !important;
+    }
 
     .modelmarketingblock1_content_left {
         margin-left: -48%;
