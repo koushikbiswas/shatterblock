@@ -40,7 +40,10 @@ export class HomeComponent implements OnInit {
     let windowheight=$(window).height();
 
     $('.newhome_header').height(287.22/755.78*windowheight);
-    $('.newhomeslider').height(468.56/755.78*windowheight);
+    $('#newmyCarousel').height(468.56/755.78*windowheight);
+    $('#newmyCarousel').find('.item').height(468.56/755.78*windowheight);
+    //$('#newmyCarousel').find('.item').find('section').height(468.56/755.78*windowheight);
+    $('#newmyCarousel').find('.item').find('img').height(468.56/755.78*windowheight);
   }
 
   openModal(template: TemplateRef<any>) {
