@@ -2618,7 +2618,7 @@
         right: -6%;
     }
 
-    #newmyCarousel .first-text h1 {
+    #myCarousel .firstcarousal h1 {
         font-size: 130px;
         line-height: 115px;
     }
@@ -2958,7 +2958,7 @@
         right: -11%;
         width: 465px;
     }
-    #newmyCarousel .first-text h1 {
+    #myCarousel .firstcarousal h1 {
         font-size: 130px;
         line-height: 115px;
     }
@@ -3666,7 +3666,7 @@
         width: 96%;
         margin: 0px auto;
     }
-    #newmyCarousel .first-text h1 {
+    #myCarousel .firstcarousal h1 {
         font-size: 105px;
         line-height: 96px;
     }
@@ -4045,7 +4045,7 @@
     .newhome_contactusdiv_wrapper form .col-md-4{
         padding-right: 0px;
     }
-    #newmyCarousel .first-text h1 {
+    #myCarousel .firstcarousal h1 {
         font-size: 78px;
         line-height: 62px;
     }
@@ -4161,6 +4161,14 @@
 }
 
 @media screen and (max-width: 800px) {
+    .fill.slider3img{
+        height: 100vh;
+        background-position: left center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+        -o-background-size: cover;
+    }
     .modelmarketingblock {
         height: 814px;
     }
@@ -4206,7 +4214,9 @@
     }
 }
 
+
 @media screen and (max-width: 767px) {
+
     .modelmarketingblock2_wrapper h2 {
         font-size: 36px;
         line-height: 41px;
@@ -4492,7 +4502,7 @@
     .newhomesproofmodeldivimgright {
         width: 100%;
     }
-    #newmyCarousel .first-text h1 {
+    #myCarousel .firstcarousal h1 {
         font-size: 64px;
         line-height: 62px;
     }
@@ -4541,6 +4551,14 @@
 @media screen and (max-width:700px) {
     .seeyouthere .newupcomingeventphotolists {
         height: 223px;
+    }
+    .fill.slider3img{
+        height: 100vh;
+        background-position: left 15% center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+        -o-background-size: cover;
     }
 }
 
@@ -4847,7 +4865,7 @@
     .sponsorblockwrapper{
         justify-content: center;
     }
-    #newmyCarousel .first-text h1 {
+    #myCarousel .firstcarousal h1 {
         font-size: 50px;
         line-height: 50px;
     }
@@ -4877,6 +4895,16 @@
 }
 
 @media screen and (max-width: 480px) {
+    .mysuccessapplication .modal-content {
+        width: 300px;
+    }
+    .mysuccessapplication .logoshatterblock {
+        width: 100%;
+        margin: 0 auto;
+        display: block;
+    }
+
+
     .newhome_contactusdiv .formdivwrapper form .col-xs-6 {width: 100%;}
     .newhome_contactusdiv .formdivwrapper form .col-xs-6.formpaddingright {
         padding-right: 0px !important;
@@ -5016,7 +5044,7 @@
     .newhomesocialmedialinks {
         padding-top: 15px;
     }
-    #newmyCarousel .first-text h1 {
+    #myCarousel .firstcarousal h1 {
         font-size: 38px;
         line-height: 35px;
     }
@@ -5210,7 +5238,7 @@
         top: -3%;
         width: 60px;
     }
-    #newmyCarousel .first-text h1 {
+    #myCarousel .firstcarousal h1 {
         font-size: 32px;
         line-height: 30px;
     }

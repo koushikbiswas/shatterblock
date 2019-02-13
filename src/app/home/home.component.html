@@ -1,61 +1,103 @@
 <app-header></app-header>
 
-<app-sidemenu></app-sidemenu>
+
+    <app-sidemenu></app-sidemenu>
+
+
 
     <div class="newhomeslider">
-        <div id="newmyCarousel" class="carousel slide" data-ride="carousel">
-            <!-- Indicators -->
+       <!-- <div id="newmyCarousel" class="carousel slide" data-ride="carousel">
+            &lt;!&ndash; Indicators &ndash;&gt;
 
-            <!-- Wrapper for slides -->
+            &lt;!&ndash; Wrapper for slides &ndash;&gt;
             <div class="carousel-inner">
                 <div class="item active">
-                    <section class="animation-box">
+                    <div class="animation-box">
                         <div class="first-text"><h1>Shatterproof Models</h1></div>
-                    </section>
-                    <img src="../assets/images/new_home_slider1.jpg"  alt="#">
+                    </div>
+                    <div class="fill" style="background-image:url('../../assets/images/new_home_slider1.jpg')"  alt="#"></div>
                 </div>
 
                 <div class="item">
-                    <section class="animation-box">
+                    <div class="animation-box">
                         <div class="first-text second-text"><h1>Shatter Proof<br>Music Group</h1></div>
-                    </section>
-                    <img src="../assets/images/new_home_slider2.jpg"  alt="#">
+                    </div>
+                    <div class="fill" style="background-image:url('../../assets/images/new_home_slider2.jpg')"  alt="#"></div>
                 </div>
 
                 <div class="item">
-                    <section class="animation-box">
+                    <div class="animation-box">
                         <div class="first-text third-text"><h1>Shatter Proof<br> Marketing</h1></div>
-                    </section>
-                    <img src="../assets/images/new_home_slider3.jpg"  alt="#">
+                    </div>
+                    <div class="fill slider3img" style="background-image:url('../../assets/images/new_home_slider3.jpg')"  alt="#"></div>
                 </div>
             </div>
 
-            <!-- Left and right controls -->
+            &lt;!&ndash; Left and right controls &ndash;&gt;
             <a class="left carousel-control" href="#newmyCarousel" data-slide="prev">
-                <!--<span class="glyphicon glyphicon-chevron-left"></span>
-                <span class="sr-only">Previous</span>-->
+                &lt;!&ndash;<span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>&ndash;&gt;
             </a>
             <a class="right carousel-control" href="#newmyCarousel" data-slide="next">
-                <!-- <span class="glyphicon glyphicon-chevron-right"></span>
-                 <span class="sr-only">Next</span>-->
+                &lt;!&ndash; <span class="glyphicon glyphicon-chevron-right"></span>
+                 <span class="sr-only">Next</span>&ndash;&gt;
             </a>
-        </div>
+        </div>-->
+
+
+        <header id="myCarousel" class="carousel slide">
+            <!-- Indicators -->
+           <!-- <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>-->
+
+            <!-- Wrapper for Slides -->
+            <div class="carousel-inner">
+                <div class="item active">
+
+                    <div class="fill" style="background-image:url('../../assets/images/new_home_slider1.jpg');"></div>
+                    <div class="animation-box">
+                        <div class="firstcarousal"><h1>Shatterproof Models</h1></div>
+                    </div>
+                </div>
+                <div class="item">
+
+                    <div class="fill" style="background-image:url('../../assets/images/new_home_slider2.jpg');"></div>
+                    <div class="animation-box">
+                        <div class="firstcarousal secondcarousal"><h1>Shatter Proof<br>Music Group</h1></div>
+                    </div>
+                </div>
+                <div class="item">
+
+                    <div class="fill slider3img" style="background-image:url('../../assets/images/new_home_slider3.jpg');"></div>
+                    <div class="animation-box">
+                        <div class="firstcarousal thirdcarousal"><h1>Shatter Proof<br> Marketing</h1></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="icon-prev"></span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="icon-next"></span>
+            </a>
+
+        </header>
+
     </div>
 
     <div class="newhomemodel_wrapper">
         <ul>
             <li>
                 <a href="javascript:void(0)" >
-
-
-
                     <img src="../assets/images/new_home_model_link1.jpg"  alt="#">
-
-
                     <span>
             <strong>Instagram</strong>
-            <p>Lorem Ipsum is simply dummy
-text of the printing and typesetting industry.</p>
+            <!--<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>-->
 
         </span>
 
@@ -69,8 +111,7 @@ text of the printing and typesetting industry.</p>
 
                     <span>
             <strong>Music Video</strong>
-            <p>Lorem Ipsum is simply dummy
-text of the printing and typesetting industry.</p>
+            <!--<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>-->
 
         </span>
 
@@ -86,8 +127,7 @@ text of the printing and typesetting industry.</p>
 
                     <span>
             <strong>Promotional</strong>
-            <p>Lorem Ipsum is simply dummy
-text of the printing and typesetting industry.</p>
+           <!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>-->
 
         </span>
 
@@ -103,8 +143,7 @@ text of the printing and typesetting industry.</p>
 
                     <span>
             <strong>Print & Publishing</strong>
-            <p>Lorem Ipsum is simply dummy
-text of the printing and typesetting industry.</p>
+          <!--  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>-->
 
         </span>
 
@@ -132,7 +171,7 @@ text of the printing and typesetting industry.</p>
                 producers and writers.
             </p>
             <div class="btncheckshatterproof">
-                <a href="javascript:void(0)" class="btnyellow">Learn More About us</a>
+                <a [routerLink]="['/whoweare/']" target="_blank" class="btnyellow">Learn More About us</a>
             </div>
         </div>
     </div>
@@ -163,7 +202,7 @@ text of the printing and typesetting industry.</p>
                     <a href="http://www.sparklingnuvo.com/" class="linkcls" target="_blank">http://www.sparklingnuvo.com/</a>
                 </h3>
                 <div class="btncheckshatterproof">
-                    <a href="javascript:void(0)" class="btnyellow">Check out Shatter Proof Marketing</a>
+                    <a href="javascript:void(0)" target="_blank" class="btnyellow">Check out Shatter Proof Marketing</a>
                 </div>
 
                 <div class="newhomesproofmarketdivimgright">
@@ -191,7 +230,7 @@ text of the printing and typesetting industry.</p>
                     <span>Shatter Proof Models</span> is the division that handles commercial modeling talent for publications, product & branding promotions and places talent public career enhancements such as major music videos, TV commercials, and small & big screen motion pictures.
                 </p>
                 <div class="btncheckshatterproof">
-                    <a href="javascript:void(0)" class="btnred">Check out Shatter Proof Modeling</a>
+                    <a [routerLink]="['/model-marketing/']" target="_blank" class="btnred">Check out Shatter Proof Modeling</a>
                 </div>
                 <div class="newhomesproofmodeldivimgright">
                     <img src="../assets/images/newhome_sproofmodeldiv_imgright.png" class="" alt="#">
@@ -224,7 +263,7 @@ text of the printing and typesetting industry.</p>
                 </div>
 
                 <div class="btncheckshatterproof">
-                    <a href="javascript:void(0)" class="btngreen">Check out Shatter Proof Marketing</a>
+                    <a href="javascript:void(0)" target="_blank" class="btngreen">Check out Shatter Proof Music</a>
                 </div>
             </div>
         </div>
@@ -259,7 +298,7 @@ text of the printing and typesetting industry.</p>
                     <div class="form-row">
                         <div class="form-group col-xs-12 text-right">
                             <div class="btncheckshatterproof">
-                                <button type="submit" class="btnyellow">Submit</button>
+                                <button type="submit" class="btnyellow" data-toggle="modal" data-target="#mysuccessapplication">Submit</button>
                             </div>
                         </div>
                     </div>
@@ -269,3 +308,41 @@ text of the printing and typesetting industry.</p>
     </div>
 
 <app-footer></app-footer>
+
+
+<!--Success Contact Modal---->
+<!-- The Modal -->
+<!--
+<div id="mysuccessapplication" class="modal mysuccessapplication fade modalopen" *ngIf="mysuccessapplication1==true" >
+    <div class="modal-dialog">
+    &lt;!&ndash; Modal content &ndash;&gt;
+        <div class="modal-content">
+            <div class="modal-body">
+                <button class="close" (click)="doclick1close()" style="cursor: pointer;">&times;</button>
+                <div class="logoshatterblock">
+                    <img src="../assets/images/shaterblockLogo.png" class="newhomelogo">
+                </div>
+                <p>Thank you for contacting Shatterblok! We will get back to you with a response as soon as possible.</p>
+            </div>
+        </div>
+    </div>
+
+</div>-->
+
+
+
+<!-- Modal -->
+<div class="modal fade modaldefault" id="mysuccessapplication" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <div class="logoshatterblock">
+                    <img src="../assets/images/shaterblockLogo.png" class="newhomelogo">
+                </div>
+                <p>Thank you for contacting Shatterblok! We will get back to you with a response as soon as possible.</p>
+            </div>
+
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->

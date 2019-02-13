@@ -15,7 +15,7 @@
     <h1 class="headertitle">Join The Team</h1>
     <p>Apply to become a part of our alluring team of models and become a member of the Shatterproof family.  Fill out the application, upload your photos, and link your social media accounts to start the process.  Upon approval, you will begin the process of becoming one of our beautiful ShatterProof Models.</p>
     <div class="btncheckshatterproof">
-      <a class="btnpink uno" id="mybutton">Application Form</a>
+      <a class="btnpink uno" id="mybutton" (click)="scrolltoform()">Application Form</a>
     </div>
   </div>
 </div>
@@ -201,7 +201,7 @@
         <div class="form-row">
           <div class="form-group col-sm-12 text-right btncheckshatterproofwrappper">
             <div class="btncheckshatterproof">
-              <button class="btnyellow" onclick="myFunction()">Submit</button>
+              <button class="btnyellow" data-toggle="modal" data-target="#mysubmitapplication">Submit</button>
             </div>
           </div>
         </div>
@@ -214,24 +214,50 @@
 
 <app-footer></app-footer>
 
-<!--Sucess Subission Modal---->
-<!-- The Modal -->
-<div id="mysuccessapplication" class="modal mysuccessapplication">
 
-  <!-- Modal content -->
+
+
+<!-- Modal -->
+<div class="modal fade modaldefault" id="mysubmitapplication" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <div class="logoshatterblock">
+          <img src="../assets/images/shaterblockLogo.png" class="newhomelogo">
+        </div>
+        <p>Thank you for submitting your Application for a chance to be a part of ShatterProof’s Model/Talent’s Team! We will review your form as soon as possible and respond with details on your opportunity regarding what steps may come next! </p>
+      </div>
+
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+
+
+
+
+
+
+
+
+<!--
+&lt;!&ndash;Sucess Subission Modal&#45;&#45;&ndash;&gt;
+&lt;!&ndash; The Modal &ndash;&gt;
+<div id="mysuccessapplication" class="modal mysuccessapplication modalopen" *ngIf="mysuccessapplication==true" >
+  <div class="modal-dialog">
+  &lt;!&ndash; Modal content &ndash;&gt;
   <div class="modal-content">
     <div class="modal-body">
-      <span class="close">&times;</span>
-
+      <button class="close" (click)="doclickclose()" style="cursor: pointer;">&times;</button>
+      <div class="logoshatterblock">
+        <img src="../assets/images/shaterblockLogo.png" class="newhomelogo">
+      </div>
       <p>Thank you for submitting your Application for a chance to be a part of ShatterProof’s Model/Talent’s Team! We will review your form as soon as possible and respond with details on your opportunity regarding what steps may come next! </p>
     </div>
   </div>
+  </div>
 
-</div>
+</div>-->
 
-<script type="text/javascript">
-    function myFunction() {
-        var popup = document.getElementById("mysuccessapplication");
-        popup.classList.toggle("show");
-    }
-</script>

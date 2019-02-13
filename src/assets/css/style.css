@@ -251,7 +251,13 @@ font-family: 'Noteworthy';
 	font-style: normal;
 }
 
-
+html, body {height: 100%}
+.wrap{
+	width: 100%;
+	height: 100%;
+	min-height: 100%;
+	padding: 0px;
+}
 
 ul, li {
 	list-style: none;
@@ -503,9 +509,9 @@ body{
 	min-height: 500px;
 }*/
 
-#myCarousel .carousel-inner {
+/*#myCarousel .carousel-inner {
 	min-height: 500px;
-}
+}*/
 
 #myCarousel .carousel-inner>.item>a>img, #myCarousel .carousel-inner>.item>img {
 	display: block;
@@ -514,9 +520,9 @@ body{
 	float: right;
 }
 
-#myCarousel .carousel-inner>.item {
+/*#myCarousel .carousel-inner>.item {
 	min-height: 500px;
-}
+}*/
 
 #myCarousel .carousel-caption {
 	right: 0;
@@ -2992,6 +2998,9 @@ body{
 
 
 .newhomeslider{ width: 100%;}
+/*.newhomeslider{width: 100%;
+	height: auto;
+	max-width: 100vw;}*/
 
 .newhomeslider .carousel-inner img{ width: 100%;}
 
@@ -3093,25 +3102,29 @@ body{
 }*/
 
 
+.carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right, .carousel-control .icon-next, .carousel-control .icon-prev {
+	font-size: 0;
+}
+
+
 #newmyCarousel .carousel-inner .item {
 	position: relative;
 }
 
-.first-text {
+.firstcarousal {
 	position: absolute;
 	top: 50%;
-	transform: translateY(-28%);
+	transform: translateY(-50%);
 	right: 0;
 	left: 0;
 	padding: 0;
-	bottom: initial;
+	bottom: inherit;
 	opacity: 0;
 	animation-name: bottomFadeOut;
 	animation-duration: 5s;
 }
 
-
-#newmyCarousel .first-text h1 {
+#myCarousel .firstcarousal h1{
 	background: url("../images/new_home_carouselcaptiondiv.jpg") center;
 	background-size: cover;
 	/*background: -webkit-linear-gradient(#eee, #333);*/
@@ -3125,10 +3138,9 @@ body{
 	white-space: normal;
 	word-break: normal;
 	text-shadow: none !important;
-
 }
 
-.second-text h1 {
+#myCarousel .secondcarousal h1{
 	background: url("../images/new_home_carouselcaptiondiv_txt2.jpg") center !important;
 	background-size: cover !important;
 	/*background: -webkit-linear-gradient(#eee, #333);*/
@@ -3141,7 +3153,7 @@ body{
 	text-shadow: none !important;
 }
 
-.third-text h1 {
+#myCarousel .thirdcarousal h1{
 	background: url("../images/new_home_carouselcaptiondiv_txt3.jpg") center !important;
 	background-size: cover !important;
 	/*background: -webkit-linear-gradient(#eee, #333);*/
@@ -3156,6 +3168,69 @@ body{
 
 
 
+
+/*
+.first-text {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 0;
+	left: 0;
+	padding: 0;
+	bottom: inherit;
+	opacity: 0;
+	animation-name: bottomFadeOut;
+	animation-duration: 5s;
+}*/
+
+/*
+#newmyCarousel .first-text h1 {
+	background: url("../images/new_home_carouselcaptiondiv.jpg") center;
+	background-size: cover;
+	!*background: -webkit-linear-gradient(#eee, #333);*!
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-family: "OpenSansBold";
+	font-size: 200px;
+	text-transform: uppercase;
+	line-height: 180px;
+	margin: 0;
+	white-space: normal;
+	word-break: normal;
+	text-shadow: none !important;
+
+}*/
+
+/*.second-text h1 {
+	background: url("../images/new_home_carouselcaptiondiv_txt2.jpg") center !important;
+	background-size: cover !important;
+	!*background: -webkit-linear-gradient(#eee, #333);*!
+	-webkit-background-clip: text !important;
+	-webkit-text-fill-color: transparent !important;
+	font-family: "OpenSansBold" !important;
+	margin: 0;
+	white-space: normal;
+	word-break: normal;
+	text-shadow: none !important;
+}*/
+
+/*
+.third-text h1 {
+	background: url("../images/new_home_carouselcaptiondiv_txt3.jpg") center !important;
+	background-size: cover !important;
+	!*background: -webkit-linear-gradient(#eee, #333);*!
+	-webkit-background-clip: text !important;
+	-webkit-text-fill-color: transparent !important;
+	font-family: "OpenSansBold" !important;
+	margin: 0;
+	white-space: normal;
+	word-break: normal;
+	text-shadow: none !important;
+}
+*/
+
+
+
 /*
 #newmyCarousel .carousel-caption h1{
 
@@ -3164,12 +3239,12 @@ body{
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes fadeBottom {
 	from {top: 0px;}
-	to {top: 200px;}
+	to {top: 0px;}
 }
 
 @keyframes fadeBottom {
 	from {top: 0px;}
-	to {top: 200px;}
+	to {top: 0px;}
 }
 
 .newhomemodel_wrapper{ width: 100%;}
@@ -3235,16 +3310,31 @@ body{
 
 
 /*---------SlideNavbar css----*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .newwrapper{
 	width: 100%;
-	perspective: 1500px;
+	/*perspective: 100vh;*/
 	margin-top: -10px;
+	position: relative;
 }
 .newheaderinnerwrapper {
-	display: flex;
+	/*display: flex;*/
 	width: 100%;
-	align-items: stretch;
-	perspective: 1500px;
+	/*align-items: stretch;*/
+	/*perspective: 1500px;*/
 }
 
 .newheaderinner{position: relative }
@@ -3262,6 +3352,8 @@ body{
 #newmySidenav{
 	z-index: 9999999999;
 	top:0px;
+	min-height:100% !important;
+	position:absolute;
 }
 
 .newnavbarright span{color: #fff; font-size: 30px; position: absolute;
@@ -3298,7 +3390,7 @@ body{
 	top: 0;
 	left: 0;
 	background-color: rgba(0, 0, 0, 0.95);
-	overflow-x: hidden;
+	overflow: hidden;
 	padding-top: 0px;
 	transition: all 0.6s cubic-bezier(0.945, 0.020, 0.270, 0.665);
 	transform-origin: bottom left;
@@ -3325,7 +3417,11 @@ body{
 	margin-left: 50px;
 }
 
-.sidemenuleftposition{margin-top: 332px;}
+.sidemenuleftposition{margin-top: 332px;
+	height:100%;
+	margin:0;
+	position:relative;
+}
 
 .sidemenuleftposition li a{
 	font-family: "Ralewaybold";
@@ -3367,6 +3463,11 @@ body{
 	padding-top: 0px;
 	transition: all 0.6s cubic-bezier(0.945, 0.020, 0.270, 0.665);
 	transform-origin: bottom left;
+}
+
+
+.sidemenuleftposition li:hover .newsubsidemenu {
+	display: block;
 }
 
 .sidemenuleftposition li .newsubsidemenu li a {
@@ -4645,6 +4746,18 @@ body{
 	margin: 0 auto;
 }
 
+.newwhoweareblock1image{
+	width: 33.33%;
+	text-align: center;
+}
+
+.newwhoweareblock1image:nth-child(2){
+	text-align: center;
+	margin-top: -4%;
+}
+
+
+/*
 .newwhoweareblock1image:nth-child(1){
 	width: 24.33%;
 	text-align: center;
@@ -4657,10 +4770,10 @@ body{
 .newwhoweareblock1image:nth-child(3){
 	width: 24.33%;
 	text-align: center;
-}
+}*/
 
 .newwhoweareblock1image img{
-	max-width:100%;
+	width:90%;
 }
 
 .newwhoweareblock2{
@@ -5343,10 +5456,11 @@ body{
 }
 
 .innerhead1toplogowrapper{
-	width: 650px;
+	width: 850px;
 	height: 100%;
 	margin: auto;
 	display: block;
+	position: relative;
 }
 .innerhead1toplogowrapper img {
 	max-width: 100%;
@@ -5665,6 +5779,7 @@ body{
 	border-bottom:1px solid rgba(255, 255, 255, 0.2);
 	margin-bottom: 11px;
 	padding-bottom: 11px;
+	text-transform: uppercase;
 }
 
 .measure-div p{
@@ -6204,7 +6319,7 @@ body{
 	z-index: 9;
 	width: 1037px;
 	height: auto;
-	margin-top: 9%;
+	margin-top: 11%;
 }
 .modelmarketingblock2_wrapper_img img{
 	max-width: 100%;
@@ -6230,7 +6345,7 @@ body{
 }
 
 .musicvideoblock1wrapper{
-	width: 1624px;
+	width: 1630px;
 	margin: 68px auto;
 	position: relative;
 	z-index: 9;
@@ -6264,9 +6379,9 @@ body{
 
 
 .musicvideoblock1 h2 {
-	background: url("../images/musicvideoblock1titlebg.jpg") center;
+	background: url(../images/musicvideoblock1titlebg.jpg) center;
 	background-size: cover;
-	/*background: -webkit-linear-gradient(#eee, #333);*/
+	/* background: -webkit-linear-gradient(#eee, #333); */
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	font-family: "OpenSansBold";
@@ -6276,21 +6391,22 @@ body{
 	margin: 0;
 	white-space: normal;
 	word-break: normal;
-	margin-top: 50px;
+	margin-top: 80px;
 }
 
 
 .musicvideoblock1 p{
 	margin: 0;
 	padding: 0;
-	font-size: 24px;
+	font-size: 48px;
 	color: #ffffff;
-	font-family: 'Ra';
-	line-height: 30px;
+	font-family: 'Ralewaybold';
+	line-height: 60px;
 	width: 100%;
-	text-align: left;
-	margin-top: 16px;
-	margin-bottom: 24px;
+	text-align: center;
+	margin-top: 40px;
+	margin-bottom: 0px;
+	text-transform: uppercase;
 }
 
 /*----End of music video css---*/
@@ -6303,75 +6419,114 @@ body{
 
 /*----Modal css---*/
 
-/* The Modal (background) */
-.modal {
-	display: none; /* Hidden by default */
-	position: fixed; /* Stay in place */
-	z-index: 1; /* Sit on top */
-	padding-top: 100px; /* Location of the box */
-	left: 0;
-	top: 0;
-	width: 100%; /* Full width */
-	height: 100%; /* Full height */
-	overflow: auto; /* Enable scroll if needed */
-	background-color: rgb(0,0,0); /* Fallback color */
-	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
-
-/* Modal Content */
-.modal-content {
-	position: relative;
-	background-color: #fefefe;
-	margin: auto;
-	padding: 0;
-	border: 1px solid #888;
-	width: 80%;
-	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-	-webkit-animation-name: animatetop;
-	-webkit-animation-duration: 0.4s;
-	animation-name: animatetop;
-	animation-duration: 0.4s
-}
-
-/* Add Animation */
-@-webkit-keyframes animatetop {
-	from {top:-300px; opacity:0}
-	to {top:0; opacity:1}
-}
-
-@keyframes animatetop {
-	from {top:-300px; opacity:0}
-	to {top:0; opacity:1}
-}
-
-/* The Close Button */
-.close {
-	color: white;
-	float: right;
-	font-size: 28px;
-	font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-	color: #000;
-	text-decoration: none;
+.modaldefault{z-index: 9999999999; margin-top: 10%;}
+.modaldefault button.close {
+	-webkit-appearance: none;
+	padding: 0px;
 	cursor: pointer;
+	background: 0 0;
+	border: 0;
+	position: absolute;
+	right: -15px;
+	top: -14px;
+	background: #440349;
+	opacity: 1 !important;
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 20px;
+	height: 30px;
+	width: 30px;
+	border-radius: 20px;
 }
 
-.modal-header {
-	padding: 2px 16px;
-	background-color: #5cb85c;
-	color: white;
+
+.modaldefault .modal-body{
+	font-family: "BebasNeueBold";
+	text-transform: uppercase;
+	color: #fff;
+	text-align: center;
+	margin: 0px;
+	-moz-text-shadow: rgb(3, 3, 3) 3px 4px 7px;
+	-webkit-text-shadow: rgb(3, 3, 3) 3px 4px 7px;
+	text-shadow: rgb(3, 3, 3) 3px 4px 7px;
+	background: rgb(20, 26, 31);
+	background: -moz-linear-gradient(221deg, rgb(20, 26, 31) 39%, rgb(58, 79, 95) 100%);
+	background: -webkit-linear-gradient(221deg, rgb(20, 26, 31) 39%, rgb(58, 79, 95) 100%);
+	background: -o-linear-gradient(221deg, rgb(20, 26, 31) 39%, rgb(58, 79, 95) 100%);
+	background: -ms-linear-gradient(221deg, rgb(20, 26, 31) 39%, rgb(58, 79, 95) 100%);
+	background: linear-gradient(311deg, rgb(20, 26, 31) 39%, rgb(58, 79, 95) 100%);
+	padding: 21px 15px 25px 15px;
+	border-radius: 0 !important;
+	margin: 0;
+	letter-spacing: 1px;
+
 }
 
-.modal-body {padding: 2px 16px;}
+.modaldefault .modal-body p{
+	font-family: "CenturyGothic";
+	font-size: 16px;
+	line-height: 30px;
+	color: #fff !important;
+	text-align: center;
+	margin: 10px 0px 0px 0px;
+}
 
-.modal-footer {
-	padding: 2px 16px;
-	background-color: #5cb85c;
-	color: white;
+.modaldefault .logoshatterblock{
+	width: 300px;
+	margin: 0 auto;
+	display: block;
+}
+
+.modaldefault .logoshatterblock img{
+	max-width: 100%;
 }
 
 
 /*---End modal css---*/
+
+
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+.carousel,
+.item,
+.active {
+	/*height: 100%;*/
+	/*height: 100vh;*/
+	margin-bottom: 0px;
+}
+
+.carousel-inner {
+	height: 100%;
+}
+
+/* Background images are set within the HTML using inline CSS, not here */
+
+.fill {
+	/*width: 100%;
+	height: 100%;
+	background-position: center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;*/
+	height: 100vh;
+	background-position: top center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+

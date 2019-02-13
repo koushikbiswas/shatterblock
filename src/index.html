@@ -15,9 +15,6 @@
   <link rel="stylesheet" href="assets/css/admin.css">
   <link rel="stylesheet" href="assets/css/adminmediacss.css">
 
-
-
-
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
@@ -92,17 +89,23 @@
       function WidthChange(mq) {
           const msg = (mq.matches ? "more" : "less") + " than 540 pixels";
           if( document.getElementById("newmySidenav")!=null)
-          document.getElementById("newmySidenav").style.width = "100%";
+          document.getElementById("newmySidenav").style.width = "80%";
 
       }
 
 
 
-      $('.uno').on('click', function(){
+      /*$('#mybutton').on('click', function(){
           $('html, body').animate({scrollTop: $("#div_id").offset().top}, 'slow');
-      });
-
-
+      });*/
+      /*
+      let posval=$('.blocklink').position();   //position of 'blocking'
+            console.log('posval');
+            console.log(posval);
+            console.log(posval.top);
+            console.log(parseInt(posval.top));
+            $('.blockmodalc').css('top',parseInt(posval.top)-200);
+      */
 
 
 
