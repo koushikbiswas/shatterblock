@@ -13,17 +13,12 @@ export class HomeComponent implements OnInit {
   public mysuccessapplication1: any = false;
   constructor(private modalService: BsModalService) {}
   ngOnInit() {
-<<<<<<< HEAD
    /* console.log('in ng oninit !!');
-=======
-    console.log('in ng oninit !!');
->>>>>>> cd9d929a6ee5fd316f41e7a2b57a05a7864eeec2
     console.log($('.newhome_header').height());
     console.log($('#newmyCarousel').height());
     console.log($('app-header').length);
     console.log($('.newhome_header').width());
     console.log($('#newmyCarousel').width());
-<<<<<<< HEAD
     console.log($(window).height());*/
   }
 
@@ -42,14 +37,6 @@ export class HomeComponent implements OnInit {
   ngAfterViewChecked(){
 
     /*console.log('in ng ngAfterViewChecked !!');
-=======
-    console.log($(window).height());
-  }
-
-  ngAfterViewChecked(){
-
-    console.log('in ng ngAfterViewChecked !!');
->>>>>>> cd9d929a6ee5fd316f41e7a2b57a05a7864eeec2
     console.log($('.newhome_header').height());
     setTimeout(()=>{    //<<<---    using ()=> syntax
       console.log('newmyCarousel height');
@@ -75,17 +62,4 @@ export class HomeComponent implements OnInit {
     this.modalRef = this.modalService.show(template);*/
   }
 
-<<<<<<< HEAD
 }
-=======
-}
-/*
-$(window).scroll(function(){
-  if ($(this).scrollTop() > 135) {
-    $('#task_flyout').addClass('fixed');
-  } else {
-    $('#task_flyout').removeClass('fixed');
-  }
-});
-*/
->>>>>>> cd9d929a6ee5fd316f41e7a2b57a05a7864eeec2
